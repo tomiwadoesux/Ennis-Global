@@ -2,6 +2,15 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import CTA from "../components/cta";
 import CertBadges from "../components/cert-badges";
+import {
+  GovernmentContractingIcon,
+  WorkforceIcon,
+  TransportIcon,
+  FederalIcon,
+  StateLocalIcon,
+  PrivateEnterpriseIcon,
+  PublicSectorIcon,
+} from "../components/about-icons";
 
 export const metadata = {
   title: "About — Ennis Global",
@@ -31,6 +40,7 @@ const capabilities = [
     body:
       "Full-lifecycle consulting for federal, state, and local contracts. We guide firms through registration, proposal development, and capture strategy — then stay on through execution.",
     tags: ["SAM.gov", "Proposals", "Capture"],
+    Icon: GovernmentContractingIcon,
   },
   {
     tag: "02 — WS",
@@ -38,6 +48,7 @@ const capabilities = [
     body:
       "We place credentialed staff into government facilities and private enterprise — janitorial, maintenance, and administrative. Compliant, insured, ready on day one.",
     tags: ["Janitorial", "Staffing", "Ops"],
+    Icon: WorkforceIcon,
   },
   {
     tag: "03 — NT",
@@ -45,14 +56,35 @@ const capabilities = [
     body:
       "NEMT operations for Medicaid and state programs. We structure the routes, credential the drivers, and operate the service — or advise teams already doing it.",
     tags: ["NEMT", "Routing", "Fleet"],
+    Icon: TransportIcon,
   },
 ];
 
 const pillars = [
-  { n: "01", h: "Federal Government", b: "DoD, GSA, VA, HHS, and federal health agencies." },
-  { n: "02", h: "State & Local", b: "State transportation, facilities management, and county services." },
-  { n: "03", h: "Private Enterprise", b: "Construction, hospitality, contractors, and civilian enterprise." },
-  { n: "04", h: "Public Sector", b: "Healthcare systems, school districts, and institutional programs." },
+  {
+    n: "01",
+    h: "Federal Government",
+    b: "DoD, GSA, VA, HHS, and federal health agencies.",
+    Icon: FederalIcon,
+  },
+  {
+    n: "02",
+    h: "State & Local",
+    b: "State transportation, facilities management, and county services.",
+    Icon: StateLocalIcon,
+  },
+  {
+    n: "03",
+    h: "Private Enterprise",
+    b: "Construction, hospitality, contractors, and civilian enterprise.",
+    Icon: PrivateEnterpriseIcon,
+  },
+  {
+    n: "04",
+    h: "Public Sector",
+    b: "Healthcare systems, school districts, and institutional programs.",
+    Icon: PublicSectorIcon,
+  },
 ];
 
 const values = [
@@ -271,71 +303,142 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
-            {capabilities.map((c) => (
-              <article
-                key={c.tag}
-                className="rounded-2xl bg-surface p-8"
-              >
-                <div className="eyebrow mb-4">{c.tag}</div>
-                <h3 className="text-[20px] font-semibold tracking-[-0.01em]">
-                  {c.title}
-                </h3>
-                <p className="mt-4 text-[13px] leading-[1.65] text-muted">
-                  {c.body}
-                </p>
-                <div className="my-8 flex h-32 items-center justify-center rounded-full bg-surface-2">
-                  <span className="code-tag">[ Icon ]</span>
-                </div>
-                <ul className="mt-4 flex flex-wrap gap-2">
-                  {c.tags.map((t) => (
-                    <li
-                      key={t}
-                      className="rounded-full bg-background px-3 py-1 text-[10px] tracking-[0.12em] text-muted"
+            {capabilities.map((c) => {
+              const Icon = c.Icon;
+              return (
+                <article
+                  key={c.tag}
+                  className="group relative flex flex-col rounded-2xl bg-surface p-8 transition-colors duration-300 hover:bg-surface-2"
+                >
+                  <div className="flex items-start justify-between gap-6">
+                    <div className="eyebrow">{c.tag}</div>
+                    <span
+                      aria-hidden
+                      className="relative flex h-14 w-14 items-center justify-center rounded-xl bg-background ring-1 ring-border transition-[background-color,transform] duration-500 group-hover:bg-accent-green group-hover:ring-accent-green"
                     >
-                      {t}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
+                      <Icon className="h-7 w-7 text-foreground transition-colors duration-500 group-hover:text-white" />
+                    </span>
+                  </div>
+                  <h3 className="mt-8 text-[20px] font-semibold tracking-[-0.01em]">
+                    {c.title}
+                  </h3>
+                  <p className="mt-4 text-[13px] leading-[1.65] text-muted">
+                    {c.body}
+                  </p>
+                  <span
+                    aria-hidden
+                    className="mt-8 block h-[1.5px] w-8 bg-accent-green transition-all duration-500 group-hover:w-24"
+                  />
+                  <ul className="mt-6 flex flex-wrap gap-2">
+                    {c.tags.map((t) => (
+                      <li
+                        key={t}
+                        className="rounded-full bg-background px-3 py-1 text-[10px] tracking-[0.12em] text-muted"
+                      >
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              );
+            })}
           </div>
         </section>
 
         {/* Pillars */}
-        <section className="mx-auto w-full max-w-[1440px] border-t border-border px-6 py-16 md:px-10 md:py-24">
-          <div className="mb-10 eyebrow">Who We Serve</div>
-          <h2 className="text-[36px] font-semibold leading-[1.05] tracking-[-0.02em] md:text-[44px]">
-            Federal. State. Private.
-            <br />
-            Any field, any contract.
-          </h2>
-          <div className="mt-14 grid grid-cols-2 gap-y-10 md:grid-cols-4">
-            {pillars.map((p) => (
-              <div key={p.n} className="md:pr-6">
-                <div className="font-mono text-[13px] text-muted">{p.n}</div>
-                <div className="eyebrow mt-3">{p.h}</div>
-                <p className="mt-3 max-w-[18ch] text-[13px] leading-[1.6] text-muted">
-                  {p.b}
-                </p>
-              </div>
-            ))}
+        <section className="mx-auto w-full max-w-[1440px] border-t border-border px-6 py-20 md:px-10 md:py-28">
+          <div className="mb-12 grid grid-cols-1 gap-6 md:mb-16 md:grid-cols-12 md:gap-12">
+            <div className="md:col-span-7">
+              <div className="eyebrow">Who We Serve</div>
+              <h2 className="mt-4 text-[36px] font-semibold leading-[1.05] tracking-[-0.02em] md:text-[44px]">
+                Federal. State. Private.
+                <br />
+                Any field, any contract.
+              </h2>
+            </div>
+            <div className="md:col-span-5 md:pt-3">
+              <p className="max-w-md text-[14px] leading-[1.65] text-muted">
+                Four sectors, one operating standard. We meet each one on its
+                own terms — credentialing, compliance, and the procurement
+                rhythm it runs on.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {pillars.map((p) => {
+              const Icon = p.Icon;
+              return (
+                <article
+                  key={p.n}
+                  className="group relative flex flex-col gap-10 overflow-hidden rounded-2xl border border-border bg-background p-6 transition-all duration-500 hover:-translate-y-1 hover:border-foreground/30 hover:shadow-[0_20px_40px_-24px_rgba(0,0,0,0.12)] md:p-7"
+                >
+                  <div className="flex items-start justify-between">
+                    <span className="font-mono text-[11px] tracking-[0.28em] text-muted-2">
+                      {p.n}
+                    </span>
+                    <Icon className="h-7 w-7 text-muted-2 transition-colors duration-300 group-hover:text-accent-green" />
+                  </div>
+                  <div>
+                    <h3 className="text-[18px] font-semibold tracking-[-0.01em] md:text-[19px]">
+                      {p.h}
+                    </h3>
+                    <p className="mt-3 text-[13px] leading-[1.65] text-muted">
+                      {p.b}
+                    </p>
+                  </div>
+                  <span
+                    aria-hidden
+                    className="h-[1.5px] w-8 bg-accent-green transition-all duration-500 group-hover:w-full"
+                  />
+                </article>
+              );
+            })}
           </div>
         </section>
 
         {/* Values */}
-        <section className="mx-auto w-full max-w-[1440px] border-t border-border px-6 py-16 md:px-10 md:py-20">
-          <div className="grid grid-cols-2 gap-y-10 md:grid-cols-4 md:gap-8">
+        <section className="mx-auto w-full max-w-[1440px] border-t border-border px-6 py-20 md:px-10 md:py-28">
+          <div className="mb-12 grid grid-cols-1 gap-6 md:mb-16 md:grid-cols-12 md:gap-12">
+            <div className="md:col-span-7">
+              <div className="eyebrow">Operating Principles</div>
+              <h2 className="mt-4 text-[36px] font-semibold leading-[1.05] tracking-[-0.02em] md:text-[44px]">
+                The standards we hold
+                <br />
+                ourselves to.
+              </h2>
+            </div>
+            <div className="md:col-span-5 md:pt-3">
+              <p className="max-w-md text-[14px] leading-[1.65] text-muted">
+                Four values, not slogans. Each one shapes how we take on work,
+                deliver it, and stay in the room after the contract is signed.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v, i) => (
-              <div key={v.h}>
-                <div className="font-mono text-[11px] text-muted-2">
-                  {String(i + 1).padStart(2, "0")}
+              <div
+                key={v.h}
+                className="group relative flex flex-col justify-between gap-12 overflow-hidden rounded-2xl border border-border bg-background p-8 transition-[transform,border-color,background-color] duration-500 hover:-translate-y-1 hover:border-foreground/30 hover:bg-surface md:p-10"
+              >
+                <div className="flex items-baseline gap-4">
+                  <span className="font-mono text-[56px] font-light leading-none tracking-[-0.04em] text-muted-2/40 transition-colors duration-500 group-hover:text-accent-green md:text-[68px]">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span
+                    aria-hidden
+                    className="h-px w-0 bg-accent-green transition-[width] duration-500 group-hover:w-12"
+                  />
                 </div>
-                <h3 className="mt-3 text-[22px] font-semibold tracking-[-0.01em]">
-                  {v.h}
-                </h3>
-                <p className="mt-3 max-w-[22ch] text-[13px] leading-[1.6] text-muted">
-                  {v.b}
-                </p>
+                <div>
+                  <h3 className="text-[22px] font-semibold tracking-[-0.01em] uppercase md:text-[24px]">
+                    {v.h}
+                  </h3>
+                  <p className="mt-4 text-[14px] leading-[1.65] text-muted">
+                    {v.b}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
