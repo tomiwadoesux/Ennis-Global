@@ -196,26 +196,6 @@ export default function AboutGrid() {
               );
             })}
           </ul>
-
-          {/* Footer strip under list */}
-          <div className="mt-5 flex flex-col items-start justify-between gap-4 rounded-2xl bg-surface px-6 py-5 sm:flex-row sm:items-center md:px-8">
-            <div className="flex items-baseline gap-3">
-              <span className="font-mono text-[28px] font-semibold tracking-[-0.02em] text-foreground md:text-[32px]">
-                50
-              </span>
-              <span className="text-[13px] text-muted">
-                states eligible to serve
-              </span>
-            </div>
-            <div className="flex items-baseline gap-3">
-              <span className="font-mono text-[28px] font-semibold tracking-[-0.02em] text-foreground md:text-[32px]">
-                3
-              </span>
-              <span className="text-[13px] text-muted">
-                sectors, one operating standard
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </section>

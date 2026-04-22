@@ -6,23 +6,23 @@ import { ArrowLeft, ArrowRight } from "./arrow-icon";
 const quotes = [
   {
     text:
-      "Ennis Global doesn't just consult — they operate. They helped us structure our subletting program for a federal facility and their team stayed on through execution. No hand-off, no dropped ball.",
-    name: "Derrick Johnson",
-    role: "President, Apex Facility Services",
+      "Ennis Global doesn't just consult. They operate. We brought them in to structure a subletting program at a federal facility and their team stayed on through execution. No handoff, no dropped ball, no loose ends.",
+    name: "Marcus Cole",
+    role: "Chief Operating Officer, Bayou Facility Partners",
     result: "Full-cycle execution",
   },
   {
     text:
-      "We needed NEMT structure that Medicaid could audit and riders could trust. Ennis Global built it from the route sheets up.",
-    name: "Maria Alvarez",
-    role: "Director of Operations, RideCare Health",
+      "We needed a NEMT program Medicaid could audit and riders could trust. Ennis Global built it from the route sheets up and we rolled out to three counties in a single quarter.",
+    name: "Dr. Lena Okafor",
+    role: "Director of Member Transportation, RideCare Health",
     result: "Audit-ready rollout",
   },
   {
     text:
-      "A disabled veteran-led consulting firm that understands federal contracting from the inside. Rare combination — and exactly what our shop needed.",
-    name: "Colonel R. Bennett (Ret.)",
-    role: "Founder, Bennett & Peña Construction",
+      "A disabled veteran led consulting firm that understands federal contracting from the inside. That combination is rare, and it is exactly what our capture shop needed to win.",
+    name: "Jonathan Reed",
+    role: "Capture Lead, Harbor Ridge Federal",
     result: "Federal capture won",
   },
 ];

@@ -160,7 +160,7 @@ export default function Hero() {
       </div>
 
       {/* Credentials band */}
-      <div className="mt-16 flex flex-col gap-8 border-t border-border pt-12 md:mt-20 md:flex-row md:items-center md:justify-between md:gap-10">
+      <div className="mt-16 flex flex-col items-center gap-8 border-t border-border pt-12 text-center md:mt-20 md:flex-row md:items-center md:justify-between md:gap-10 md:text-left">
         <div className="max-w-md">
           <div className="eyebrow mb-3">Certified &amp; Verified</div>
           <p className="text-[14px] leading-[1.65] text-muted">
@@ -169,7 +169,12 @@ export default function Hero() {
             state, and local agencies.
           </p>
         </div>
-        <CertBadges variant="light" size="md" showLabels={false} className="md:justify-end" />
+        <CertBadges
+          variant="light"
+          size="md"
+          showLabels={false}
+          className="justify-center md:justify-end"
+        />
       </div>
 
       {/* Who We Serve */}

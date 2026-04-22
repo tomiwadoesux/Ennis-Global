@@ -1,9 +1,7 @@
-import Link from "next/link";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import CTA from "../components/cta";
 import CertBadges from "../components/cert-badges";
-import { ArrowRight } from "../components/arrow-icon";
 
 export const metadata = {
   title: "About — Ennis Global",
@@ -343,38 +341,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Dark CTA */}
-        <section className="mx-auto w-full max-w-[1440px] px-6 pb-20 md:px-10 md:pb-28">
-          <div className="grid grid-cols-1 gap-8 rounded-2xl bg-dark p-8 text-white md:grid-cols-12 md:gap-10 md:p-14">
-            <div className="md:col-span-7">
-              <div className="eyebrow !text-white/60">Ready to work with us?</div>
-              <h2 className="mt-5 text-[36px] font-semibold leading-[1.05] tracking-[-0.02em] md:text-[48px]">
-                Talk to us about
-                <br />
-                any contract.
-              </h2>
-              <p className="mt-6 max-w-lg text-[14px] leading-[1.65] text-white/70">
-                Federal, state, or private &mdash; book a consultation with our
-                team. No commitment required.
-              </p>
-              <Link
-                href="/contact"
-                className="group mt-10 inline-flex items-center gap-3 bg-white px-6 py-4 text-[14px] font-medium text-dark transition-transform hover:-translate-y-0.5"
-              >
-                Book a Consultation
-                <ArrowRight size={14} />
-              </Link>
-            </div>
-            <div className="md:col-span-5">
-              <div
-                aria-hidden
-                className="flex h-full min-h-[200px] items-center justify-center font-mono text-[120px] font-bold text-white/5 md:text-[200px]"
-              >
-                01
-              </div>
-            </div>
-          </div>
-        </section>
+        <CTA />
       </main>
       <Footer />
     </>
