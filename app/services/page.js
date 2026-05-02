@@ -15,7 +15,7 @@ const stats = [
   { k: "Any Field", v: "Federal · State · Private" },
   { k: "SDVOSB · VOSB · 8(a)", v: "Certified & Verified" },
   { k: "50", v: "States Eligible to Serve" },
-  { k: "100%", v: "Black &amp; Veteran Owned" },
+  { k: "100%", v: "Disabled Veteran-Owned" },
 ];
 
 const services = [

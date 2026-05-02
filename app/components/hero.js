@@ -30,30 +30,6 @@ const STATS = [
 export default function Hero() {
   return (
     <section className="relative mx-auto w-full max-w-[1440px] px-6 pt-10 pb-20 md:px-10 md:pt-14 md:pb-28">
-      {/* Top meta ribbon */}
-      <div className="mb-10 flex flex-col items-center gap-3 md:mb-14">
-        <div className="flex items-center gap-3">
-          <span
-            className="inline-block h-1.5 w-1.5 rounded-full"
-            style={{ backgroundColor: "var(--accent-green)" }}
-            aria-hidden
-          />
-          <span className="eyebrow">Consulting &amp; Business Solutions</span>
-          <span
-            className="inline-block h-1.5 w-1.5 rounded-full"
-            style={{ backgroundColor: "var(--accent-green)" }}
-            aria-hidden
-          />
-        </div>
-        <div className="hidden items-center gap-5 text-[10px] tracking-[0.28em] text-muted-2 uppercase md:flex">
-          <span>SDVOSB</span>
-          <span className="h-3 w-px bg-border" aria-hidden />
-          <span>8(a) Registered</span>
-          <span className="h-3 w-px bg-border" aria-hidden />
-          <span>VOSB</span>
-        </div>
-      </div>
-
       {/* Headline — smaller, wider */}
       <h1 className="mx-auto max-w-[34ch] text-center text-[36px] leading-[1.08] font-semibold tracking-[-0.03em] md:max-w-[40ch] md:text-[48px] lg:text-[58px] xl:text-[64px]">
         Consulting &amp; Business Solutions, Built for{" "}
@@ -67,9 +43,9 @@ export default function Hero() {
 
       {/* Tagline */}
       <p className="mx-auto mt-6 max-w-[56ch] text-center text-[15px] leading-[1.65] text-muted md:mt-8 md:text-[16px]">
-        A Black-owned, disabled veteran-owned consulting firm advising on
-        government contracting, workforce subletting, and non-emergency
-        medical transportation &mdash; all under one roof.
+        A disabled veteran-owned consulting firm advising on government
+        contracting, workforce subletting, and non-emergency medical
+        transportation &mdash; all under one roof.
       </p>
 
       {/* Primary CTAs — brand-style */}
@@ -164,9 +140,9 @@ export default function Hero() {
         <div className="max-w-md">
           <div className="eyebrow mb-3">Certified &amp; Verified</div>
           <p className="text-[14px] leading-[1.65] text-muted">
-            Black-owned, disabled veteran-owned consulting &amp; business
-            solutions. Registered in SAM.gov and certified to serve federal,
-            state, and local agencies.
+            Disabled veteran-owned consulting &amp; business solutions.
+            Registered in SAM.gov and certified to serve federal, state,
+            and local agencies.
           </p>
         </div>
         <CertBadges

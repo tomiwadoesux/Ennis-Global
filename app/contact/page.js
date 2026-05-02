@@ -5,12 +5,35 @@ import { ArrowRight } from "../components/arrow-icon";
 export const metadata = {
   title: "Contact — Ennis Global",
   description:
-    "Book a consultation with Ennis Global — Black-owned, disabled veteran-owned consulting & business solutions.",
+    "Book a consultation with Ennis Global — disabled veteran-owned consulting & business solutions.",
 };
 
 const info = [
-  { label: "Email", value: "info@ennisglobal.com", href: "mailto:info@ennisglobal.com" },
-  { label: "Phone", value: "+1 (000) 000-0000", href: "tel:+10000000000" },
+  {
+    label: "Address",
+    value: "3118 South Cooper Street, Arlington, TX 76015",
+  },
+  {
+    label: "General Inquiries",
+    value: "info@ennisglobalmgt.com",
+    href: "mailto:info@ennisglobalmgt.com",
+  },
+  {
+    label: "Support",
+    value: "support@ennisglobalmgt.com",
+    href: "mailto:support@ennisglobalmgt.com",
+  },
+  {
+    label: "O. Ibukun",
+    value: "o.ibukun@ennisglobalmgt.com",
+    href: "mailto:o.ibukun@ennisglobalmgt.com",
+  },
+  {
+    label: "D. Olayinka",
+    value: "d.olayinka@ennisglobalmgt.com",
+    href: "mailto:d.olayinka@ennisglobalmgt.com",
+  },
+  { label: "Phone", value: "Coming soon" },
   { label: "Hours", value: "Mon – Fri, 8:00 AM – 6:00 PM ET" },
 ];
 
@@ -80,7 +103,7 @@ export default function ContactPage() {
               </dl>
 
               <p className="mt-12 text-[11px] tracking-[0.14em] text-muted-2 uppercase">
-                Black-Owned · Disabled Veteran-Owned · SDVOSB · VOSB · Texas HUB · SAM.gov
+                Disabled Veteran-Owned · SDVOSB · VOSB · Texas HUB · SAM.gov
               </p>
             </div>
 

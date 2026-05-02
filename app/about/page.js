@@ -15,13 +15,13 @@ import {
 export const metadata = {
   title: "About — Ennis Global",
   description:
-    "Ennis Global MGT Inc. is a Black-owned, disabled veteran-owned consulting and business solutions firm.",
+    "Ennis Global MGT Inc. is a disabled veteran-owned consulting and business solutions firm.",
 };
 
 const pillTags = [
-  "Black-Owned",
   "Disabled Veteran-Owned",
   "SDVOSB",
+  "VOSB",
   "Texas HUB",
   "U.S. Army",
 ];
@@ -107,14 +107,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
             <div className="md:col-span-7">
               <h1 className="text-[44px] font-semibold leading-[1.02] tracking-[-0.03em] md:text-[68px]">
-                Black-owned.
-                <br />
                 Veteran-led.
+                <br />
+                Mission-built.
                 <br />
                 Built to serve.
               </h1>
               <p className="mt-8 max-w-lg text-[15px] leading-[1.65] text-muted">
-                Ennis Global MGT Inc. is a Black-owned, disabled veteran-owned
+                Ennis Global MGT Inc. is a disabled veteran-owned
                 consulting and business solutions firm. We serve federal,
                 state, and private-sector clients with a focus on government
                 contracting, workforce subletting, and non-emergency medical
@@ -213,7 +213,7 @@ export default function AboutPage() {
                 Vision
               </h3>
               <p className="mt-6 max-w-md text-[14px] leading-[1.65] text-muted">
-                A landscape where Black-owned and veteran-owned firms
+                A landscape where veteran-owned firms
                 consistently win, hold, and grow government contracts &mdash;
                 and where state-funded transportation programs run like they
                 were designed to.
@@ -243,9 +243,9 @@ export default function AboutPage() {
               <p className="mt-6 max-w-lg text-[14px] leading-[1.65] text-muted">
                 Ennis Global was founded by a disabled U.S. Army veteran who
                 spent years inside federal contracting before building the
-                firm he wished existed for everyone else. Black ownership and
-                veteran-owned status aren&rsquo;t marketing &mdash;
-                they&rsquo;re what shape how we show up for every client.
+                firm he wished existed for everyone else. Veteran-owned status
+                isn&rsquo;t marketing &mdash; it&rsquo;s what shapes how we
+                show up for every client.
               </p>
               <div className="mt-10 flex items-center gap-3">
                 <span
@@ -256,7 +256,7 @@ export default function AboutPage() {
                 <div>
                   <div className="text-[13px] font-semibold">Founder &amp; Principal Consultant</div>
                   <div className="text-[12px] text-muted">
-                    U.S. Army Veteran · Disabled · Black-Owned Business Owner
+                    U.S. Army Veteran · Disabled Veteran-Owned Business
                   </div>
                 </div>
               </div>

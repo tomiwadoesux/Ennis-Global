@@ -25,6 +25,18 @@ export default function Footer() {
           <p className="mt-2 text-[11px] tracking-[0.12em] text-muted-2 uppercase">
             Serving Federal · State · Private
           </p>
+          <address className="mt-4 not-italic text-[12px] leading-[1.65] text-muted">
+            3118 South Cooper Street
+            <br />
+            Arlington, TX 76015
+            <br />
+            <a
+              href="mailto:info@ennisglobalmgt.com"
+              className="hover:text-foreground transition-colors"
+            >
+              info@ennisglobalmgt.com
+            </a>
+          </address>
         </div>
 
         <nav className="flex flex-wrap items-center gap-x-8 gap-y-3">
@@ -52,7 +64,7 @@ export default function Footer() {
 
       <div className="flex flex-col items-start justify-between gap-3 border-t border-border py-6 text-[11px] tracking-[0.08em] text-muted-2 md:flex-row md:items-center">
         <span>© 2025 Ennis Global MGT Inc. All rights reserved.</span>
-        <span className="text-muted-2/70">Black-Owned · Disabled Veteran-Owned · SDVOSB</span>
+        <span className="text-muted-2/70">Disabled Veteran-Owned · SDVOSB · VOSB</span>
       </div>
     </footer>
   );

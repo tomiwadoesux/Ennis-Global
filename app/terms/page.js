@@ -147,7 +147,7 @@ const sections = [
     id: "contact",
     title: "Contact",
     body: [
-      "For questions about these Terms, contact legal@ennisglobal.com or write to Ennis Global MGT Inc.",
+      "For questions about these Terms, contact legal@ennisglobalmgt.com or write to Ennis Global MGT Inc.",
     ],
   },
 ];

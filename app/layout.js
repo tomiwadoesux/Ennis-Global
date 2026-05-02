@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Ennis Global — Consulting & Business Solutions",
   description:
-    "Ennis Global MGT Inc. is a Black-owned, Disabled Veteran-Owned (SDVOSB) consulting and business solutions firm serving federal, state, and private sector clients. Government contracting, workforce subletting, and non-emergency medical transportation.",
+    "Ennis Global MGT Inc. is a Disabled Veteran-Owned (SDVOSB) consulting and business solutions firm serving federal, state, and private sector clients. Government contracting, workforce subletting, and non-emergency medical transportation.",
 };
 
 export default function RootLayout({ children }) {

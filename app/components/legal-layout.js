@@ -113,10 +113,10 @@ export default function LegalLayout({
                   If you have questions about this document or need to exercise
                   any of your rights, reach our team at{" "}
                   <a
-                    href="mailto:legal@ennisglobal.com"
+                    href="mailto:legal@ennisglobalmgt.com"
                     className="text-foreground underline underline-offset-2"
                   >
-                    legal@ennisglobal.com
+                    legal@ennisglobalmgt.com
                   </a>{" "}
                   or by mail at Ennis Global MGT Inc.
                 </p>

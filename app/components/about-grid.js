@@ -95,10 +95,10 @@ export default function AboutGrid() {
             <p className="mt-8 text-[22px] leading-[1.4] font-medium md:text-[26px] md:leading-[1.35]">
               A{" "}
               <span style={{ color: "var(--accent-green-soft)" }}>
-                Black-owned
+                disabled veteran-owned
               </span>
-              , disabled veteran-owned consulting firm — built to win
-              contracts across federal, state, and private sectors.
+              {" "}consulting firm — built to win contracts across
+              federal, state, and private sectors.
             </p>
             <p className="mt-6 max-w-md text-[14px] leading-[1.65] text-white/60">
               From cleaning crews at federal facilities to NEMT fleets serving
