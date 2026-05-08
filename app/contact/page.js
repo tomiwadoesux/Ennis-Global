@@ -33,7 +33,7 @@ const info = [
     value: "d.olayinka@ennisglobalmgt.com",
     href: "mailto:d.olayinka@ennisglobalmgt.com",
   },
-  { label: "Phone", value: "Coming soon" },
+  { label: "Phone", value: "(800) 979-2077", href: "tel:+18009792077" },
   { label: "Hours", value: "Mon – Fri, 8:00 AM – 6:00 PM ET" },
 ];
 
