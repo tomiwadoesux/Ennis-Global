@@ -19,7 +19,7 @@ const info = [
     href: "mailto:info@ennisglobalmgt.com",
   },
   { label: "Phone", value: "(800) 979-2077", href: "tel:+18009792077" },
-  { label: "Hours", value: "Mon – Fri, 8:00 AM – 6:00 PM ET" },
+  { label: "Hours", value: "Mon – Fri, 8:00 AM – 5:00 PM CT" },
 ];
 
 function Field({ label, children, className = "" }) {
