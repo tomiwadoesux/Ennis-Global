@@ -119,7 +119,7 @@ const sections = [
     title: "Your Rights",
     body: [
       "Depending on your jurisdiction, you may have the right to access, correct, delete, or port your personal information, to restrict or object to certain processing, and to withdraw consent. Texas residents may exercise rights under the Texas Data Privacy and Security Act (TDPSA).",
-      "To exercise any of these rights, email legal@ennisglobalmgt.com with sufficient information for us to verify your identity. We will respond within the timeframes required by applicable law.",
+      "To exercise any of these rights, email info@ennisglobalmgt.com with sufficient information for us to verify your identity. We will respond within the timeframes required by applicable law.",
     ],
   },
   {
@@ -154,7 +154,7 @@ const sections = [
     id: "contact",
     title: "Contact",
     body: [
-      "For privacy inquiries, requests, or complaints, contact us at legal@ennisglobalmgt.com or by mail at Ennis Global MGT Inc..",
+      "For privacy inquiries, requests, or complaints, contact us at info@ennisglobalmgt.com or by mail at Ennis Global MGT Inc..",
     ],
   },
 ];

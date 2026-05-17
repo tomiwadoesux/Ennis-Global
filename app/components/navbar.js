@@ -7,6 +7,7 @@ import Logo from "./logo";
 import { ArrowRight } from "./arrow-icon";
 
 const links = [
+  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

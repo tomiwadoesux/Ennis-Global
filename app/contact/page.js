@@ -11,27 +11,12 @@ export const metadata = {
 const info = [
   {
     label: "Address",
-    value: "3118 South Cooper Street, Arlington, TX 76015",
+    value: "3118 South Cooper Street, Suite 1760, Arlington, TX 76015",
   },
   {
     label: "General Inquiries",
     value: "info@ennisglobalmgt.com",
     href: "mailto:info@ennisglobalmgt.com",
-  },
-  {
-    label: "Support",
-    value: "support@ennisglobalmgt.com",
-    href: "mailto:support@ennisglobalmgt.com",
-  },
-  {
-    label: "O. Ibukun",
-    value: "o.ibukun@ennisglobalmgt.com",
-    href: "mailto:o.ibukun@ennisglobalmgt.com",
-  },
-  {
-    label: "D. Olayinka",
-    value: "d.olayinka@ennisglobalmgt.com",
-    href: "mailto:d.olayinka@ennisglobalmgt.com",
   },
   { label: "Phone", value: "(800) 979-2077", href: "tel:+18009792077" },
   { label: "Hours", value: "Mon – Fri, 8:00 AM – 6:00 PM ET" },

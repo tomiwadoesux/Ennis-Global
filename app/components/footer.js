@@ -26,7 +26,7 @@ export default function Footer() {
             Serving Federal · State · Private
           </p>
           <address className="mt-4 not-italic text-[12px] leading-[1.65] text-muted">
-            3118 South Cooper Street
+            3118 South Cooper Street, Suite 1760
             <br />
             Arlington, TX 76015
             <br />
